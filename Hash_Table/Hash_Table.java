@@ -3,7 +3,7 @@ import java.io.*;
 public class Hash_Table
 {
 	public static void main(String[] args) throws FileNotFoundException{
-		Hashtable<Integer, ArrayList<String>> hash = new Hashtable<Integer, ArrayList<String>>();
+	Hashtable<Integer, ArrayList<String>> hash = new Hashtable<Integer, ArrayList<String>>();
         ArrayList<String> mod0 = new ArrayList<String>();
         ArrayList<String> mod1 = new ArrayList<String>();
         ArrayList<String> mod2 = new ArrayList<String>();
@@ -26,7 +26,7 @@ public class Hash_Table
             else if (hash_value == 4){mod4.add(data);}
             else if (hash_value == 5){mod5.add(data);}
         }
-         System.out.println("============================================================================================");
+        System.out.println("============================================================================================");
         hash.put(0, mod0);
         hash.put(1, mod1);
         hash.put(2, mod2);
