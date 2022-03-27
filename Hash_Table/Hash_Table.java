@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.*;1
 import java.io.*;
 public class Hash_Table
 {
