@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-public class Hash_Table
+public class Main
 {
 	public static void main(String[] args) throws FileNotFoundException{
 		Hashtable<Integer, ArrayList<String>> hash = new Hashtable<Integer, ArrayList<String>>();
@@ -14,10 +14,18 @@ public class Hash_Table
 		Scanner readMyFile = new Scanner(new File("source.txt"));
 		while(readMyFile.hasNext()){
 		    String data = readMyFile.next();
-		    int a = (int) data.charAt(0);
-		    int b = (int) data.charAt(1);
-		    int c = (int) data.charAt(2);
-		    int hash_value = ((a + c + 2*b) * 17 + 5)%6;
+		    int digitsum = 0;
+		    int alphasum = 0;
+		    for(int it = 0; it < data.length(); it++){
+		        char ch = data.charAt(it);
+		        if (Character.isAlphabetic(ch)) {
+		            alphasum += (int) ch;
+		        }
+		        else if (Character.isDigit(ch)){
+		            digitsum += (int) ch;
+		        }
+		    }
+		    int hash_value = ((alphasum + 2 * digitsum) * 17 +5)%6;
 		    System.out.println("The Hash value of "+data+" is "+hash_value);
 		    if (hash_value == 0){mod0.add(data);}
 		    else if (hash_value == 1){mod1.add(data);}
