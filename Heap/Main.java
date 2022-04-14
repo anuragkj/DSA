@@ -105,7 +105,7 @@ class Main {
     
     public static void main(String[] args) throws FileNotFoundException
     {
-        System.out.print("Step by step formation of min heap:");
+        System.out.println("Step by step formation of min heap:");
         Main minHeap = new Main(100);
         //Here the input taken from heapin is based on the format heapin.txt is given. Can change if the input style changes.
         Scanner readMyFile = new Scanner(new File("heapin.txt"));
@@ -121,7 +121,7 @@ class Main {
         {
             System.out.print(minHeap.remove() +" ");
         }
-        System.out.print(minHeap.giveTop());
+        System.out.println(minHeap.giveTop());
                            
     }
 }
