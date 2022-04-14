@@ -84,10 +84,14 @@ class Main {
     }*/
     public void printHeap()
     {
-        for (int i = 1; i < size; ++i)
+        for (int i = 1; i <= size; ++i)
             System.out.print(Heap[i] + " ");
  
         System.out.println();
+    }
+    public String giveTop()
+    {
+        return Heap[FRONT];
     }
     public String remove()
     {
@@ -111,6 +115,13 @@ class Main {
             minHeap.insert(s);
             minHeap.printHeap();
         }
+        
+        System.out.println("Heap sort implementation:");
+        for(int i = 0; i < nodes.length - 1 ; i++)
+        {
+            System.out.print(minHeap.remove() +" ");
+        }
+        System.out.print(minHeap.giveTop());
                            
     }
 }
