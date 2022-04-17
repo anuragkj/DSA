@@ -1,0 +1,2 @@
+-Remove the comments before pasting in terminal
+-Replace the 'Main' (3 places, NOT from public static void main) from code with the name of the file
