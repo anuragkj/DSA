@@ -70,18 +70,6 @@ class Main {
             current = parent(current);
         }
     }
-    /* This function is another method to print. Add only if required
-    public void print()
-    {
-        for (int i = 1; i <= size / 2; i++) {
-            System.out.print(
-                " PARENT : " + Heap[i]
-                + " LEFT CHILD : " + Heap[2 * i]
-                + " RIGHT CHILD :" + Heap[2 * i + 1]);
- 
-            System.out.println();
-        }
-    }*/
     public void printHeap()
     {
         for (int i = 1; i <= size; ++i)
@@ -107,7 +95,6 @@ class Main {
     {
         System.out.println("Step by step formation of min heap:");
         Main minHeap = new Main(100);
-        //Here the input taken from heapin is based on the format heapin.txt is given. Can change if the input style changes.
         Scanner readMyFile = new Scanner(new File("heapin.txt"));
         String data = readMyFile.nextLine();
         String[] nodes = data.split(", ");
