@@ -1,4 +1,4 @@
-import java.util.*;1
+import java.util.*;
 import java.lang.Math;
 import java.io.*;
 public class Main
