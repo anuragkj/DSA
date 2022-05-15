@@ -8,4 +8,4 @@ OR
 
 The above can be used for applying the code on any input file.
 
-THANK YOU!!
+THANK YOU!
