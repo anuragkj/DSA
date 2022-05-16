@@ -1,3 +1,3 @@
 -Remove the comments before pasting in terminal
 -Replace the 'Main' (3 places, NOT from public static void main) from code with the name of the file
--Just edit tyhe heapin.txt file for this week's input and the new sorted array will be displayed
+-Just edit the heapin.txt file for this week's input and the new sorted array will be displayed
